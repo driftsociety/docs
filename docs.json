@@ -26,8 +26,8 @@
             "group": "Guides",
             "pages": [
               "guides/keybinds",
-              "guides/joining",
               "guides/commands",
+              "guides/joining",
               "guides/playstation"
             ]
           }
