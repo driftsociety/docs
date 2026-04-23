@@ -24,7 +24,12 @@
           },
           {
             "group": "Guides",
-            "pages": ["guides/keybinds", "guides/commands"]
+            "pages": [
+              "guides/keybinds",
+              "guides/joining",
+              "guides/commands",
+              "guides/playstation"
+            ]
           }
         ]
       }

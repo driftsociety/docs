@@ -11,6 +11,7 @@ iconType: "duotone"
     | Command | Description |
     | :-- | :-- |
     | `/help` | Show the main help menu |
+    | `/lobby` | Make or join a private lobby |
     | `/s` | Set your current location as your spawnpoint |
     | `/r` | Return to your set spawnpoint |
     | `/tags` | Toggles player name tags overhead |
@@ -26,7 +27,7 @@ iconType: "duotone"
 
 <script
   dangerouslySetInnerHTML={{
-__html: `
+    __html: `
 (function() {
 document.addEventListener('click', function(e) {
 const summary = e.target.closest('summary');
@@ -43,5 +44,5 @@ group.querySelectorAll('details[open]').forEach(openAcc => {
 });
 })();
 `,
-}}
+  }}
 />
