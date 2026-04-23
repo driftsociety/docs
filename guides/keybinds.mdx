@@ -26,9 +26,16 @@ iconType: "duotone"
     | <kbd>F11</kbd> | **Start Recording** (Rockstar Editor) |
   </Accordion>
 
-  <Accordion title="Xbox Binds" icon="xbox">
-    | Button | Action | | :-- | :-- | | <kbd>View</kbd> (Hold) | **Open vMenu** | | <kbd>LB</kbd> \+ <kbd>D-Pad Up</kbd> | **Set spawnpoint** | | <kbd>LB</kbd>{" "} \+ <kbd>D-Pad Down</kbd> | **Return to spawnpoint** | | <kbd>LB</kbd> | **Vehicle Boost** | | <kbd>D-Pad Left</kbd> | **Vehicle Kickflip** |
-  </Accordion>
+{/* prettier-ignore */}
+<Accordion title="Xbox Binds" icon="xbox">
+  | Button | Action |
+  | :-- | :-- |
+  | <kbd>View</kbd> (Hold) | **Open vMenu** |
+  | <kbd>LB</kbd> + <kbd>D-Pad Up</kbd> | **Set spawnpoint** |
+  | <kbd>LB</kbd> + <kbd>D-Pad Down</kbd> | **Return to spawnpoint** |
+  | <kbd>LB</kbd> | **Vehicle Boost** |
+  | <kbd>D-Pad Left</kbd> | **Vehicle Kickflip** |
+</Accordion>
 
   <Accordion title="PlayStation Binds" icon="playstation">
     | Button | Action |
@@ -43,7 +50,7 @@ iconType: "duotone"
 
 <script
   dangerouslySetInnerHTML={{
-  __html: `
+    __html: `
 (function() {
 document.addEventListener('click', function(e) {
   const summary = e.target.closest('summary');
@@ -60,9 +67,10 @@ document.addEventListener('click', function(e) {
 });
 })();
 `,
-}}
+  }}
 />
 
 <Tip>
-  **Pro Tip:** Use the search function (<kbd>⌘ K</kbd> or <kbd>Ctrl K</kbd>) in the top navigation bar to quickly find specific commands.
+  **Pro Tip:** Use the search function (<kbd>⌘ K</kbd> or <kbd>Ctrl K</kbd>) in
+  the top navigation bar to quickly find specific commands.
 </Tip>
