@@ -1,0 +1,68 @@
+---
+title: "Keybindings"
+sidebarTitle: "Keybindings"
+description: "Get to know the controls and key binds of drift society"
+icon: "book-open-reader"
+iconType: "duotone"
+---
+
+<AccordionGroup>
+  <Accordion title="Keyboard Binds" icon="keyboard">
+    | Key | Action |
+    | :-- | :-- |
+    | <kbd>H</kbd> | **Show help menu** |
+    | <kbd>Esc</kbd> | **Close help menu** |
+    | <kbd>4</kbd> | **Set spawnpoint** |
+    | <kbd>5</kbd> | **Return to spawnpoint** |
+    | <kbd>6</kbd> | **Toggle drift smoke** |
+    | <kbd>R</kbd> | **Repair vehicle** |
+    | <kbd>Q</kbd> | **Vehicle Kickflip** |
+    | <kbd>Shift</kbd> | **Vehicle Boost** |
+    | <kbd>F1</kbd> | **vMenu** (Cars, peds, etc.) |
+    | <kbd>F2</kbd> | **NoClip** (Fly mode) |
+    | <kbd>F5</kbd> | **Spooner** (Ramps, props, etc.) |
+    | <kbd>F6</kbd> | **vStancer** (Camber, suspension) |
+    | <kbd>F7</kbd> | **Handling Editor** (Tuning) |
+    | <kbd>F11</kbd> | **Start Recording** (Rockstar Editor) |
+  </Accordion>
+
+  <Accordion title="Xbox Binds" icon="xbox">
+    | Button | Action | | :-- | :-- | | <kbd>View</kbd> (Hold) | **Open vMenu** | | <kbd>LB</kbd> \+ <kbd>D-Pad Up</kbd> | **Set spawnpoint** | | <kbd>LB</kbd>{" "} \+ <kbd>D-Pad Down</kbd> | **Return to spawnpoint** | | <kbd>LB</kbd> | **Vehicle Boost** | | <kbd>D-Pad Left</kbd> | **Vehicle Kickflip** |
+  </Accordion>
+
+  <Accordion title="PlayStation Binds" icon="playstation">
+    | Button | Action |
+    | :-- | :-- |
+    | <kbd>Touchpad</kbd> (Hold) | **Open vMenu** |
+    | <kbd>L1</kbd> \+ <kbd>D-Pad Up</kbd> | **Set spawnpoint** |
+    | <kbd>L1</kbd> \+ <kbd>D-Pad Down</kbd> | **Return to spawnpoint** |
+    | <kbd>L1</kbd> | **Vehicle Boost** |
+    | <kbd>D-Pad Left</kbd> | **Vehicle Kickflip** |
+  </Accordion>
+</AccordionGroup>
+
+<script
+  dangerouslySetInnerHTML={{
+  __html: `
+(function() {
+document.addEventListener('click', function(e) {
+  const summary = e.target.closest('summary');
+  if (!summary) return;
+  const currentAccordion = summary.parentElement;
+  if (!currentAccordion.hasAttribute('open')) {
+    const group = currentAccordion.closest('.accordion-group') || document;
+    group.querySelectorAll('details[open]').forEach(openAcc => {
+      if (openAcc !== currentAccordion) {
+        openAcc.removeAttribute('open');
+      }
+    });
+  }
+});
+})();
+`,
+}}
+/>
+
+<Tip>
+  **Pro Tip:** Use the search function (<kbd>⌘ K</kbd> or <kbd>Ctrl K</kbd>) in the top navigation bar to quickly find specific commands.
+</Tip>

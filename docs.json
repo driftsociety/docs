@@ -1,0 +1,70 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Drift Society Help Center",
+  "colors": {
+    "primary": "#4177ff",
+    "light": "#4177ff",
+    "dark": "#4177ff"
+  },
+  "favicon": "logo/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "overview/introduction",
+              "overview/changelog",
+              "overview/faq",
+              "overview/products"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": ["guides/keybinds", "guides/commands"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "href": "https://driftsociety.lol",
+          "icon": "browser"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://driftsociety.lol/discord",
+          "icon": "discord"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://discord.gg/driftsociety"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Discord",
+      "href": "https://driftsociety.lol/discord"
+    }
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/driftsociety",
+      "github": "https://github.com/crimzi-dev/docs"
+    }
+  }
+}

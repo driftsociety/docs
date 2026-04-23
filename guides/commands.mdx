@@ -1,0 +1,47 @@
+---
+title: "Commands"
+sidebarTitle: "Commands"
+description: "A complete list of chat commands for Drift Society"
+icon: "terminal"
+iconType: "duotone"
+---
+
+<AccordionGroup>
+  <Accordion title="General Commands" icon="terminal">
+    | Command | Description |
+    | :-- | :-- |
+    | `/help` | Show the main help menu |
+    | `/s` | Set your current location as your spawnpoint |
+    | `/r` | Return to your set spawnpoint |
+    | `/tags` | Toggles player name tags overhead |
+    | `/owntag` | Shows your own user tag |
+  </Accordion>
+
+  <Accordion title="Vehicle Commands" icon="car">
+    | Command | Description |
+    | :-- | :-- |
+    | `/smoke` | Toggle vehicle drift smoke on/off |
+  </Accordion>
+</AccordionGroup>
+
+<script
+  dangerouslySetInnerHTML={{
+__html: `
+(function() {
+document.addEventListener('click', function(e) {
+const summary = e.target.closest('summary');
+if (!summary) return;
+const currentAccordion = summary.parentElement;
+if (!currentAccordion.hasAttribute('open')) {
+const group = currentAccordion.closest('.accordion-group') || document;
+group.querySelectorAll('details[open]').forEach(openAcc => {
+  if (openAcc !== currentAccordion) {
+    openAcc.removeAttribute('open');
+  }
+});
+}
+});
+})();
+`,
+}}
+/>

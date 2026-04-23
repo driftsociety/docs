@@ -1,0 +1,64 @@
+---
+title: Frequently Asked Questions
+sidebarTitle: FAQ
+description: "Find answers to common questions about our server."
+icon: message-question
+iconType: duotone
+---
+
+<AccordionGroup>
+  <Accordion title="What is Drift Society?">
+    **Drift Society** is a fivem drift server that features, custom cars,
+    scripts, tunes, and more.
+  </Accordion>
+  <Accordion title="Is Vip free?">
+    **Vip is not free** but you can check prices
+    [here](https://store.driftsociety.lol/category/packages).
+  </Accordion>
+  <Accordion title="How do i use Kermit?">
+    **Kermit is for Vip users** if your already a Vip user just open our menu
+    (f1) and select ped options then ped spawner, and select Kermit.
+  </Accordion>
+</AccordionGroup>
+
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+    (function() {
+      let isToggling = false;
+      
+      document.addEventListener('click', function(e) {
+        const summary = e.target.closest('summary');
+        if (summary && !isToggling) {
+          const clickedAccordion = summary.parentElement;
+          const wasOpen = clickedAccordion.hasAttribute('open');
+          
+          isToggling = true;
+          
+          if (!wasOpen) {
+            const allAccordions = document.querySelectorAll('details[open]');
+            allAccordions.forEach(accordion => {
+              if (accordion !== clickedAccordion) {
+                accordion.removeAttribute('open');
+              }
+            });
+          }
+          
+          requestAnimationFrame(() => {
+            isToggling = false;
+          });
+        }
+      });
+    })();
+  `,
+  }}
+/>
+
+<Note>
+  Can’t find what you're looking for? Join our
+  [Discord](https://discord.gg/driftsociety)
+</Note>
+<Tip>
+  **Pro Tip:** Use the search function in the top navigation bar to quickly find
+  specific topics or guides.
+</Tip>
