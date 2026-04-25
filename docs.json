@@ -28,8 +28,13 @@
               "guides/keybinds",
               "guides/commands",
               "guides/joining",
-              "guides/playstation"
+              "guides/playstation",
+              "guides/drift"
             ]
+          },
+          {
+            "group": "Common Issues",
+            "pages": ["ci/solarmusicdecember", "ci/dlccount", "ci/exporting"]
           }
         ]
       }
